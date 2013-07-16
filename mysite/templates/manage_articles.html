@@ -1,6 +1,6 @@
 <form method="post" action="">
   {% csrf_token %}
-  {{ formset.article_formset }}
+  {{ formset.management_form }}
   <table>
     {% for form in formset %}
     {{ form }}
