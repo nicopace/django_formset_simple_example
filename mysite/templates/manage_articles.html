@@ -1,0 +1,10 @@
+<form method="post" action="">
+  {% csrf_token %}
+  {{ formset.article_formset }}
+  <table>
+    {% for form in formset %}
+    {{ form }}
+    {% endfor %}
+  </table>
+  <input type="submit"/>
+</form>
